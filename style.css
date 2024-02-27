@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+body {
+    padding : 0;
+    margin : 0;
+}
+.container {
+    height:100vh;
+    background:linear-gradient(to right,#348F50,#56B4D3);
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Roboto", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+   overflow: hidden;
+       
+}
+.contactform{
+    
+    background-color: rgba(245, 245, 220, 0.653);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+   transform: translateY(100%);
+}
+.container.active .contactform {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.contactform h2 {
+    text-align: center;
+    color:#333;
+}
+.form-group{
+    padding:10px;
+}
+label{
+    display:block;
+    margin-bottom: 8px;
+}
+input,textarea {
+    width:100%;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    padding:10px;
+}
+button {
+    background-color: rgb(7, 57, 71);
+    color: white;
+    padding: 10px 15px;
+    margin:10px;
+    border:none;
+    border-radius: 5px;;
+}
+
+button:hover {
+    background-color: lightgreen;
+    cursor:pointer;
+    color:#333;
+}
